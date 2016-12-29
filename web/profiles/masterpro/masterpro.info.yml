@@ -1,0 +1,38 @@
+name: Masterpro
+type: profile
+description: 'Master Profile.'
+core: 8.x
+
+# Optional: Declare your installation profile as a distribution
+# This will make the installer auto-select this installation profile.
+# The distribution_name property is used in the installer and other places as
+# a label for the software being installed.
+distribution:
+  name: Webzina
+
+# Required modules
+dependencies:
+  - node
+  - history
+  - image
+  - options
+  - path
+  - taxonomy
+  - dblog
+  - search
+  - toolbar
+  - field_ui
+  - file
+  - views
+  - views_ui
+  - editor
+  - ckeditor
+  
+  - locale
+  - language
+  - content_translation
+  - config_translation
+  
+themes:
+  - bartik
+  - seven
