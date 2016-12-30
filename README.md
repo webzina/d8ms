@@ -40,7 +40,25 @@ Basically, do the same that you previously did for default.
     * Run `cd ../web` and `drush @foo site-install -vy --account-name=admin --account-pass=admin --config-dir=../config/foo/sync`
     * Verify that sites are working: `drush @foo status`
 1. Configure subsite/foo to have it's own repository
-1. Usually you will also want to have custom themes and modules, you can store them in `subsite/foo` and add symlinks in usual directories
+1. Usually you will also want to have custom themes and modules, you can store
+them in `subsite/foo` and add symlinks in usual directories
+
+
+Profiles
+===============
+If you want to create a profile that enables configurations,
+modules and themes, for all your subsites living under the d8ms platform.
+The profiles will not be part of this repository nor any subsite repository.
+One easy way to do this is to fork the main repository dxvargas/d8ms and set it
+as upstream, then in the forked repository you can add some profile(s).
+
+This was done in https://github.com/webzina/d8ms where the masterpro profile was added.
+Then to install the first time the command is `drush @foo site-install masterpro -vy --account-name=admin --account-pass=admin`
+and then to export the definitions to use this profile the command is `drush @foo cex -y`.
+
+More information here:
+https://help.github.com/articles/fork-a-repo/
+https://help.github.com/articles/syncing-a-fork/
 
 Notes
 ===============
