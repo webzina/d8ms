@@ -49,8 +49,8 @@ The profiles will not be part of this repository nor any subsite repository.
 One easy way to do this is to fork the main repository dxvargas/d8ms and set it
 as upstream, then in the forked repository you can add some profile(s).
 
-This was done in https://github.com/webzina/d8ms where the masterpro profile was added.
-Then to install the first time the command is `drush @foo site-install masterpro -vy --account-name=admin --account-pass=admin`
+This was done in https://github.com/webzina/d8ms where the d8mspro profile was added.
+Then to install the first time the command is `drush @foo site-install d8mspro -vy --account-name=admin --account-pass=admin`
 and then to export the definitions to use this profile the command is `drush @foo cex -y`.
 
 More information in GitHub about forking:
