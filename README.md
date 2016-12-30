@@ -35,7 +35,7 @@ Basically, do the same that you previously did for default.
   * Run `git clone https://github.com/dxvargas/d8ms-subsite subsite/foo`
   * Make symlinks for the subsite directories
     * Run `cd config`
-    * Run `ln -s ../subsite/foo/config foo
+    * Run `ln -s ../subsite/foo/config foo`
 1. Install Drupal
     * Run `cd ../web` and `drush @foo site-install -vy --account-name=admin --account-pass=admin --config-dir=../config/foo/sync`
     * Verify that sites are working: `drush @foo status`
