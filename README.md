@@ -1,6 +1,8 @@
 Overview
 ===============
 Drupal 8 multisite platform with composer.
+This is a distro using [d8ms](https://github.com/dxvargas/d8ms) with the d8mspro
+profile, which has some extra modules, theme and configuration.
 
 :bell: This tool is under heavy construction, there are no releases at all.
 
@@ -21,7 +23,7 @@ Getting Started
     * Run `cd ../web` and `drush @default site-install -vy --account-name=admin --account-pass=admin --config-dir=../config/default/sync`
     * Verify that sites are working: `drush @default status`
 
-Creating a new Subite (e.g. `foo`) with masterpro profile
+Creating a new Subite (e.g. `foo`) with d8mspro profile
 ===============
 
 1. Configure settings files
@@ -35,26 +37,11 @@ Creating a new Subite (e.g. `foo`) with masterpro profile
     * Run `cd config`
     * Run `ln -s ../subsite/foo/config foo`
 1. Install Drupal
-    * Run `cd ../web` and `drush @foo site-install masterpro -vy --account-name=admin --account-pass=admin`
+    * Run `cd ../web` and `drush @foo site-install d8mspro -vy --account-name=admin --account-pass=admin`
     * Verify that sites are working: `drush @foo status`
 1. Configure subsite/foo to have it's own repository
 1. Usually you will also want to have custom themes and modules, you can store
 them in `subsite/foo` and add symlinks in usual directories
-
-Profiles
-===============
-If you want to create a profile that enables configurations,
-modules and themes, for all your subsites living under the d8ms platform.
-The profiles will not be part of this repository nor any subsite repository.
-One easy way to do this is to fork the main repository dxvargas/d8ms and set it
-as upstream, then in the forked repository you can add some profile(s).
-
-This was done in https://github.com/webzina/d8ms where the d8mspro profile was added.
-Then to install the first time the command is `drush @foo site-install d8mspro -vy --account-name=admin --account-pass=admin`
-and then to export the definitions to use this profile the command is `drush @foo cex -y`.
-
-More information in GitHub about forking:
-[Fork A Repo](https://help.github.com/articles/fork-a-repo/)
 
 Notes
 ===============
