@@ -56,9 +56,8 @@ This was done in https://github.com/webzina/d8ms where the masterpro profile was
 Then to install the first time the command is `drush @foo site-install masterpro -vy --account-name=admin --account-pass=admin`
 and then to export the definitions to use this profile the command is `drush @foo cex -y`.
 
-More information here:
-https://help.github.com/articles/fork-a-repo/
-https://help.github.com/articles/syncing-a-fork/
+More information in GitHub about forking:
+[Fork A Repo](https://help.github.com/articles/fork-a-repo/)
 
 Notes
 ===============
