@@ -40,6 +40,7 @@ Creating a new Subite (e.g. `foo`) with d8mspro profile
     * Run `cd ../web` and `drush @foo site-install d8mspro -vy --account-name=admin --account-pass=admin`
     * Verify that sites are working: `drush @foo status`
 1. Configure subsite/foo to have it's own repository
+1. Run `drush @foo cex` and commit changes to the configuration repository
 1. Usually you will also want to have custom themes and modules, you can store
 them in `subsite/foo` and add symlinks in usual directories
 
