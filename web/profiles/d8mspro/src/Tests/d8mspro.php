@@ -1,17 +1,17 @@
 <?php
 
-namespace Drupal\masterpro\Tests;
+namespace Drupal\d8mspro\Tests;
 
 use Drupal\simpletest\WebTestBase;
 
 /**
  * Tests Main installation profile expectations.
  *
- * @group masterpro
+ * @group d8mspro
  */
 class MainTest extends WebTestBase {
 
-  protected $profile = 'masterpro';
+  protected $profile = 'd8mspro';
 
   /**
    * Tests Main installation profile.

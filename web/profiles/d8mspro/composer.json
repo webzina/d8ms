@@ -1,0 +1,23 @@
+{
+    "name": "webzina/d8ms/d8mspro",
+    "description": "d8mspro profile",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.drupal-composer.org"
+        }
+    ],
+    "require": {
+        "drupal/bootstrap" : "^8.3"
+    },
+    "require-dev": {
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
